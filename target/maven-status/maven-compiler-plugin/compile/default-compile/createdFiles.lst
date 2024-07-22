@@ -1,0 +1,13 @@
+jhsoftperu\backend_api_project\Backend_api_project.class
+jhsoftperu\dao\ClienteRepository.class
+jhsoftperu\util\info.class
+jhsoftperu\model\Cliente.class
+jhsoftperu\model\Prestamo.class
+jhsoftperu\service\ClienteService.class
+jhsoftperu\config\SwaggerConfig.class
+jhsoftperu\controller\PrestamoController.class
+jhsoftperu\dao\PrestamoRepository.class
+jhsoftperu\service\PrestamoService.class
+jhsoftperu\util\ResourceNotFoundException.class
+jhsoftperu\controller\ClienteController.class
+jhsoftperu\util\Excepciones.class

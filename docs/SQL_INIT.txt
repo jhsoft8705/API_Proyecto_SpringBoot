@@ -1,0 +1,29 @@
+ DELIMITER //
+
+CREATE PROCEDURE Sp_actualizar_prestamos(
+    IN p_id INT,
+    IN p_estado VARCHAR(20),
+    IN p_fecha_actualizar DATETIME,
+    IN p_fecha_devolucion DATE,
+    IN p_fecha_prestamo DATE, 
+    IN p_igv DOUBLE,
+    IN p_monto DOUBLE,
+    IN p_total DOUBLE,
+    IN p_cliente_id INT
+)
+BEGIN
+    UPDATE prestamos 
+    SET 
+        estado = p_estado,
+        fecha_actualizar = p_fecha_actualizar,
+        fecha_devolucion = p_fecha_devolucion,
+        fecha_prestamo = p_fecha_prestamo, 
+        igv = p_igv,
+        monto = p_monto,
+        total = p_total,
+        cliente_id = p_cliente_id
+    WHERE
+        id = p_id;
+END //
+
+DELIMITER ;

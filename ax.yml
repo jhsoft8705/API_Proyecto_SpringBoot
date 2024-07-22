@@ -1,0 +1,11 @@
+# YAML Template application.yml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/Empresa
+    username: root 
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+ 
+
+server:
+  port: 8081
